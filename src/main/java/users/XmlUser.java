@@ -21,6 +21,8 @@ public class XmlUser {
 
 		System.out.println("Attribute value for a given xpath element : "
 				+ xmlReader.getXmlAttributeValue("//CustomerParty/ID[1]", "schemeName", xmlReader.result));
+
+		System.out.println("Atrributes : " + xmlReader.getAllAttributes("//CustomerParty/ID[1]", xmlReader.result));
 	}
 
 }

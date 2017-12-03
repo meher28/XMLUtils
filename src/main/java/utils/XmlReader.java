@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -14,7 +15,9 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
+import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
+import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
@@ -154,7 +157,7 @@ public class XmlReader {
 		return result;
 	}
 
-	public ArrayList<String> getAllAttributes(String xpathExpr, String attributeName, String xmlString) {
+	public ArrayList<String> getAllAttributes(String xpathExpr, String xmlString) {
 
 		ArrayList<String> result = new ArrayList<String>();
 
@@ -166,20 +169,17 @@ public class XmlReader {
 			Document document = db.parse(is);
 			XPath xPath = XPathFactory.newInstance().newXPath();
 			Node node = (Node) xPath.evaluate(xpathExpr, document, XPathConstants.NODE);
+			NamedNodeMap attributes = node.getAttributes();
 
-			for (int i = 0; i < node.getAttributes().getLength(); i++) {
-				if (node.getAttributes().getNamedItem(attributeName) != null) {
-					result.add("");
-					return result;
-				}
+			for (int i = 0; i < attributes.getLength(); i++) {
+				Attr attr = (Attr) attributes.item(i);
+				String attrName = attr.getNodeName();
+				String attrValue = attr.getNodeValue();
+
+				result.add(attrName + " : " + attrValue);
+
 			}
-			/*
-			 * NodeList nodeList = document.getElementsByTagName(xmlElementName); for (int x
-			 * = 0, size = nodeList.getLength(); x < size; x++) { if
-			 * (nodeList.item(x).getAttributes().getNamedItem(attributeName) != null) {
-			 * System.out.println(nodeList.item(x).getAttributes().getNamedItem(
-			 * attributeName).getNodeValue()); } }
-			 */
+			return result;
 
 		} catch (ParserConfigurationException e) {
 			e.printStackTrace();
