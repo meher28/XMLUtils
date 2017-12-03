@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<ProcessSalesOrder releaseID="1.0" languageCode="en" xmlns="http://www.kingfisher.com/oagis/9" xmlns:ns="http://www.openapplications.org/oagis/9">
+  <ns:ApplicationArea>
+    <ns:Sender>
+      <ns:LogicalID>ATG</ns:LogicalID>
+      <ns:ComponentID>10.128.10.142</ns:ComponentID>
+    </ns:Sender>
+    <ns:CreationDateTime>2017-11-15T14:07:46.755+00:00</ns:CreationDateTime>
+    <ns:BODID>61193944866755</ns:BODID>
+  </ns:ApplicationArea>
+  <DataArea>
+    <ns:Process>
+      <ns:ActionCriteria>
+        <ns:ActionExpression expressionLanguage="xpath" actionCode="Add">/ProcessSalesOrder/DataArea/SalesOrder</ns:ActionExpression>
+      </ns:ActionCriteria>
+    </ns:Process>
+    <SalesOrder>
+      <SalesOrderHeader>
+        <ns:DocumentID>
+          <ns:ID schemeName="EXTERNAL">0074000469</ns:ID>
+        </ns:DocumentID>
+        <ns:AlternateDocumentID>
+          <ns:ID schemeName="ATG">o261138063</ns:ID>
+        </ns:AlternateDocumentID>
+        <ns:DocumentDateTime>2017-11-15T14:02:29.251Z</ns:DocumentDateTime>
+        <ns:Type>L_Standard</ns:Type>
+        <ns:SourceID>0505</ns:SourceID>
+        <CustomerParty>
+          <ns:ID schemeID="1" schemeName="ATG">130756606</ns:ID>
+          <ns:ID schemeID="2" schemeName="SAP">0060075297</ns:ID>
+          <Login>ritu.mondal@kingfisher.com</Login>
+          <ns:Title>Ms</ns:Title>
+          <ns:GivenName>Ritu</ns:GivenName>
+          <ns:FamilyName>Mondal</ns:FamilyName>
+          <ns:GenderCode/>
+          <ns:BirthDateTime>1993-07-02T00:00:00.000+01:00</ns:BirthDateTime>
+          <ns:LanguageCode>en</ns:LanguageCode>
+          <Contact>
+            <ns:TelephoneCommunication>
+              <ns:UseCode>DAY</ns:UseCode>
+              <ns:FormattedNumber>07123456789</ns:FormattedNumber>
+              <ns:Preference>
+                <ns:Indicator>false</ns:Indicator>
+                <ns:Description type="Usage">DayToDay</ns:Description>
+              </ns:Preference>
+              <ns:Preference>
+                <ns:Indicator>false</ns:Indicator>
+                <ns:Description type="Usage">OrderUpdates</ns:Description>
+              </ns:Preference>
+            </ns:TelephoneCommunication>
+            <ns:TelephoneCommunication>
+              <ns:UseCode>EVE</ns:UseCode>
+              <ns:FormattedNumber>07123456788</ns:FormattedNumber>
+              <ns:Preference>
+                <ns:Indicator>false</ns:Indicator>
+                <ns:Description type="Usage">DayToDay</ns:Description>
+              </ns:Preference>
+              <ns:Preference>
+                <ns:Indicator>false</ns:Indicator>
+                <ns:Description type="Usage">OrderUpdates</ns:Description>
+              </ns:Preference>
+            </ns:TelephoneCommunication>
+            <ns:MobileTelephoneCommunication>
+              <ns:FormattedNumber>07123456788</ns:FormattedNumber>
+              <ns:Preference>
+                <ns:Indicator>false</ns:Indicator>
+                <ns:Description type="Usage">DayToDay</ns:Description>
+              </ns:Preference>
+              <ns:Preference>
+                <ns:Indicator>false</ns:Indicator>
+                <ns:Description type="Usage">OrderUpdates</ns:Description>
+              </ns:Preference>
+            </ns:MobileTelephoneCommunication>
+            <SMSTelephoneCommunication>
+              <ns:FormattedNumber>07123456788</ns:FormattedNumber>
+              <ns:Preference>
+                <ns:Indicator>false</ns:Indicator>
+                <ns:Description type="Usage">DayToDay</ns:Description>
+              </ns:Preference>
+              <ns:Preference>
+                <ns:Indicator>false</ns:Indicator>
+                <ns:Description type="Usage">OrderUpdates</ns:Description>
+              </ns:Preference>
+            </SMSTelephoneCommunication>
+            <ns:EMailAddressCommunication>
+              <ns:EMailAddressID>ritu.mondal@kingfisher.com</ns:EMailAddressID>
+              <ns:HTMLPreferredIndicator>false</ns:HTMLPreferredIndicator>
+              <ns:Preference>
+                <ns:Indicator>false</ns:Indicator>
+                <ns:Description type="Usage">Marketing</ns:Description>
+              </ns:Preference>
+              <ns:Preference>
+                <ns:Indicator>false</ns:Indicator>
+                <ns:Description type="Usage">OrderUpdates</ns:Description>
+              </ns:Preference>
+              <ns:Preference>
+                <ns:Indicator>false</ns:Indicator>
+                <ns:Description type="Usage">DayToDay</ns:Description>
+              </ns:Preference>
+            </ns:EMailAddressCommunication>
+            <Location>
+              <ns:Address>
+                <ns:BuildingNumber>27</ns:BuildingNumber>
+                <ns:BuildingName>Tops Pizzas</ns:BuildingName>
+                <ns:StreetName>Lower Stone Street</ns:StreetName>
+                <ns:CitySubDivisionName/>
+                <ns:CityName>MAIDSTONE</ns:CityName>
+                <ns:CountrySubDivisionCode>Kent</ns:CountrySubDivisionCode>
+                <ns:CountryCode>GB</ns:CountryCode>
+                <ns:PostalCode>ME15 6LH</ns:PostalCode>
+              </ns:Address>
+              <ManualKeyingIndicator>false</ManualKeyingIndicator>
+            </Location>
+            <ns:Preference>
+              <ns:Indicator>false</ns:Indicator>
+              <ns:Description type="BQ_Marketing_Consent"/>
+            </ns:Preference>
+            <ns:Preference>
+              <ns:Indicator>false</ns:Indicator>
+              <ns:EffectiveTimePeriod>
+                <ns:InclusiveIndicator>false</ns:InclusiveIndicator>
+                <ns:StartDateTime>2017-10-04T08:15:53.137+01:00</ns:StartDateTime>
+              </ns:EffectiveTimePeriod>
+              <ns:Description type="New_Terms_And_Conditions"/>
+            </ns:Preference>
+          </Contact>
+          <Organisation>
+            <ns:Name/>
+            <OwnerIndicator>false</OwnerIndicator>
+          </Organisation>
+          <SalesOrganisation>
+            <ns:ID>BQ-UK</ns:ID>
+          </SalesOrganisation>
+          <ns:Type name="Retail">2</ns:Type>
+          <ns:GroupType name="Retail">3</ns:GroupType>
+          <ns:Status>
+            <ns:Code name="Initialized">1</ns:Code>
+            <ns:Type name="Online">1</ns:Type>
+          </ns:Status>
+          <ns:Status>
+            <ns:Code name="UnBlocked">3</ns:Code>
+            <ns:Type name="Order">2</ns:Type>
+          </ns:Status>
+          <BrandChannel>
+            <Brand>
+              <ns:Code name="B and Q">BQ</ns:Code>
+            </Brand>
+            <Channel>
+              <ns:Code name="Web">WEB</ns:Code>
+            </Channel>
+          </BrandChannel>
+          <Payment>
+            <PaymentCard>
+              <ns:Type>Maestro</ns:Type>
+              <ns:Number>503396********0818</ns:Number>
+              <ns:NameOnAccount>Ritu</ns:NameOnAccount>
+              <ns:NickName>Maestro - 0818</ns:NickName>
+              <ns:Expiration>
+                <ns:Month>04</ns:Month>
+                <ns:Year>2021</ns:Year>
+              </ns:Expiration>
+              <PaymentAuthorization>
+                <Token>10000012001</Token>
+                <HostAuthorizationIndicator>false</HostAuthorizationIndicator>
+                <OnlineAuthorizationIndicator>false</OnlineAuthorizationIndicator>
+              </PaymentAuthorization>
+              <ICCIndicator>false</ICCIndicator>
+              <ns:BillingAddress>
+                <ns:BuildingNumber>27</ns:BuildingNumber>
+                <ns:BuildingName>Tops Pizzas</ns:BuildingName>
+                <ns:StreetName>Lower Stone Street</ns:StreetName>
+                <ns:CitySubDivisionName/>
+                <ns:CityName>MAIDSTONE</ns:CityName>
+                <ns:CountrySubDivisionCode>Kent</ns:CountrySubDivisionCode>
+                <ns:CountryCode>GB</ns:CountryCode>
+                <ns:PostalCode>ME15 6LH</ns:PostalCode>
+              </ns:BillingAddress>
+              <CardHolderPresentIndicator>false</CardHolderPresentIndicator>
+            </PaymentCard>
+          </Payment>
+          <Payment>
+            <PaymentCard>
+              <ns:Type>Visa</ns:Type>
+              <ns:Number>401200******8884</ns:Number>
+              <ns:NameOnAccount>Ritu</ns:NameOnAccount>
+              <ns:NickName>Visa - 8884</ns:NickName>
+              <ns:Expiration>
+                <ns:Month>09</ns:Month>
+                <ns:Year>2030</ns:Year>
+              </ns:Expiration>
+              <PaymentAuthorization>
+                <Token>10000482201</Token>
+                <HostAuthorizationIndicator>false</HostAuthorizationIndicator>
+                <OnlineAuthorizationIndicator>false</OnlineAuthorizationIndicator>
+              </PaymentAuthorization>
+              <ICCIndicator>false</ICCIndicator>
+              <ns:BillingAddress>
+                <ns:BuildingNumber>27</ns:BuildingNumber>
+                <ns:BuildingName>Tops Pizzas</ns:BuildingName>
+                <ns:StreetName>Lower Stone Street</ns:StreetName>
+                <ns:CitySubDivisionName/>
+                <ns:CityName>MAIDSTONE</ns:CityName>
+                <ns:CountrySubDivisionCode>Kent</ns:CountrySubDivisionCode>
+                <ns:CountryCode>GB</ns:CountryCode>
+                <ns:PostalCode>AB22 2BA</ns:PostalCode>
+              </ns:BillingAddress>
+              <CardHolderPresentIndicator>false</CardHolderPresentIndicator>
+            </PaymentCard>
+          </Payment>
+          <Payment>
+            <PaymentCard>
+              <ns:Type>Visa Debit</ns:Type>
+              <ns:Number>453979******0106</ns:Number>
+              <ns:NameOnAccount>Ritu</ns:NameOnAccount>
+              <ns:NickName>Visa Debit - 0106</ns:NickName>
+              <ns:Expiration>
+                <ns:Month>07</ns:Month>
+                <ns:Year>2027</ns:Year>
+              </ns:Expiration>
+              <PaymentAuthorization>
+                <Token>10000004501</Token>
+                <HostAuthorizationIndicator>false</HostAuthorizationIndicator>
+                <OnlineAuthorizationIndicator>false</OnlineAuthorizationIndicator>
+              </PaymentAuthorization>
+              <ICCIndicator>false</ICCIndicator>
+              <ns:BillingAddress>
+                <ns:BuildingNumber>27</ns:BuildingNumber>
+                <ns:BuildingName>Tops Pizzas</ns:BuildingName>
+                <ns:StreetName>Lower Stone Street</ns:StreetName>
+                <ns:CitySubDivisionName/>
+                <ns:CityName>MAIDSTONE</ns:CityName>
+                <ns:CountrySubDivisionCode>Kent</ns:CountrySubDivisionCode>
+                <ns:CountryCode>GB</ns:CountryCode>
+                <ns:PostalCode>ME15 6LH</ns:PostalCode>
+              </ns:BillingAddress>
+              <CardHolderPresentIndicator>false</CardHolderPresentIndicator>
+            </PaymentCard>
+          </Payment>
+          <PriceSegmentGroup name="Default">ALL</PriceSegmentGroup>
+          <PreferredStoreID/>
+          <OrderReferenceRequiredIndicator>false</OrderReferenceRequiredIndicator>
+          <SensitiveIndicator>false</SensitiveIndicator>
+          <VIPIndicator>true</VIPIndicator>
+          <UpdateStatus>
+            <ns:Code>CHANGED</ns:Code>
+          </UpdateStatus>
+          <Token>bcef524804a7af2b2f3c26a467e02ee9f9f9efe27bbf197e4e6361c6a2034ebc</Token>
+          <Transactional>true</Transactional>
+        </CustomerParty>
+        <ns:TotalAmount currencyID="GBP">500.00</ns:TotalAmount>
+        <SalesTransaction>
+          <ns:ID>ATG0505007400046920171115140746758</ns:ID>
+          <ns:Type>RetailTransactionStockView</ns:Type>
+          <ns:StartDateTime>2017-11-15T14:07:46.758Z</ns:StartDateTime>
+          <ns:EndDateTime>2017-11-15T14:07:46.758Z</ns:EndDateTime>
+        </SalesTransaction>
+        <Payment id="Maestro">
+          <PaymentCard>
+            <ns:Type>SWIT</ns:Type>
+            <ns:Number>503396********0818</ns:Number>
+            <ns:NameOnAccount>Ritu</ns:NameOnAccount>
+            <ns:Expiration>
+              <ns:Month>04</ns:Month>
+              <ns:Year>2021</ns:Year>
+            </ns:Expiration>
+            <PaymentAuthorization>
+              <ns:ID schemeName="TERMINAL">10.131.4.17</ns:ID>
+              <ns:ResponseCode>789DE</ns:ResponseCode>
+              <AuthorizationDateTime>2017-11-15T14:02:28.000Z</AuthorizationDateTime>
+              <ns:Amount currencyID="GBP">500.0</ns:Amount>
+              <Token>10000012001</Token>
+              <CV2CheckResponseCode>2</CV2CheckResponseCode>
+              <PCCheckResponseCode>2</PCCheckResponseCode>
+              <ADDCheckResponseCode>0</ADDCheckResponseCode>
+              <OverallResponseCode>ACCEPT</OverallResponseCode>
+            </PaymentAuthorization>
+            <Referral>
+              <ns:TransactionID>800118598434</ns:TransactionID>
+              <ns:StatusCode>ACCEPT</ns:StatusCode>
+              <ns:ResponseCode>0100</ns:ResponseCode>
+            </Referral>
+            <CleartextNumber>503396********0818</CleartextNumber>
+          </PaymentCard>
+          <ns:Amount currencyID="GBP">500.0</ns:Amount>
+          <TransactionType>Charge</TransactionType>
+        </Payment>
+        <BrandChannel>
+          <Brand>
+            <ns:Code>BQ</ns:Code>
+          </Brand>
+          <Channel>
+            <ns:Code>CCC</ns:Code>
+          </Channel>
+        </BrandChannel>
+        <NearestStoreID>0151</NearestStoreID>
+      </SalesOrderHeader>
+    </SalesOrder>
+  </DataArea>
+</ProcessSalesOrder>
